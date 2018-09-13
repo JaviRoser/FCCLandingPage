@@ -1,8 +1,6 @@
-// document.getElementbyClassName
-
 // const navbar = document.getElementsByClassName('topnav');
 const whatWeOfferlist = document.getElementById('what-we-offer');
-// const footer = document.getElementsByClassName('footer');
+let footer = document.querySelector('footer');
 
 offerList = [
     'Premiun Materials',
@@ -13,12 +11,12 @@ offerList = [
 offerListContent = ["Our robot is made with aluminiun, which will increase duration of our product",
     "We make sure your robot is ready to shipped as soon as it is ordered.",
     "No damages or faults"
-]	
+]
 
-footerContent=[
-	'Privacy',
-	'Terms',
-	'Contact'
+footerContent = [
+    'Privacy',
+    'Terms',
+    'Contact'
 ]
 
 function navbarEffect() {
@@ -33,9 +31,10 @@ for (let i = 0; i < offerList.length; i++) {
     }
 }
 
-let footer = document.getElementsByClassName('footer');
-let newFooterUl=document.createElement('ul');
-footer.appendChild(newFooterUl);  
-// for(let k = 0; k < footerContent.length; k++) {
-
-// }
+const copyrights=document.querySelector('.copyRights');
+//It dynamically adds the content to the footer content
+for (let k = 0; k < footerContent.length; k++) {
+    const footerListContent = document.querySelector('.footerListContent')
+    footerListContent.innerHTML += `<li>${footerContent[k]}</li>`;
+}
+copyrights.innerText= "Copyright 2016, Ninja Toy";

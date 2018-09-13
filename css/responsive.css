@@ -15,13 +15,25 @@
         -webkit-flex-direction: column;
         flex-direction: column;
     }
+
+    .footerListContent,
+    .copyRights {
+        flex: wrap;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 }
+
 
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {}
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */

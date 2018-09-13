@@ -1,13 +1,25 @@
+/*Allow to change the color where the color variable is*/
+
+:root {
+    --main-color: #004a7c;
+    --secondary-color: #005691;
+    --ternary-color: #e8f1f5;
+    --four-color: #fafafa;
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: Karla,Titillium Web,Arial, Helvetica, sans-serif;
+
+    color: var(--main-color);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
-
-
 
 
 
@@ -17,38 +29,52 @@ body {
     background-color: #f1f1f1;
     padding: 30px;
     text-align: center;
-    font-size: 35px;
+    font-size: 15px;
 }
 
+#companyNameLogo {
+    font-size: 1.5em;
+    font-weight: 550;
+    font-family: 'Black Ops One', cursive;
+    /* padding: 0.9em 2em 0.9em 1em; */
+}
+
+
+
+
+/*The Coolest Ninja Toy Learn...*/
 
 .main-title {
     text-align: center;
     padding-top: 10em;
 }
 
+.main-title h1{
+    font-family: 'Black Ops One', cursive;
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
 
 /* Style the top navigation bar */
 
 .topnav {
+    /*background-color: var(--four-color);*/
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
     padding: 24px 0 12px 0;
     width: 100%;
+    margin: 0;
     top: 0;
     position: fixed;
     z-index: 1000;
+   
 }
-
-
-
-/*Add effect to the navbar when scrolling*/
-
-.sticky {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+.sticky{
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* Style the topnav links */
 
@@ -56,6 +82,7 @@ body {
     /* float: left; */
     padding: 5px 40px;
     list-style-type: none;
+    color: var(--primary-color);
 }
 
 .topnav li:first-child {
@@ -70,18 +97,12 @@ body {
 .main-content {
     padding-top: 5em;
     padding-bottom: 10em;
-     display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-/* Container for flexboxes */
-
-
-/*.row {
-   
-}*/
 
 
 /* Create three unequal columns that sits next to each other */
@@ -93,13 +114,95 @@ body {
 }
 
 
+/*Responsive Pricing Table**/
 
+.columnsPrice {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+
+/* Add shadows on hover */
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+/* Pricing header */
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* List items */
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Grey list item */
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+
+
+/* The "Sign Up" button */
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
 
 
 /* Style the footer */
 
+footer{
+    padding-top: 40em;
+}
+
 .footer {
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+}
+
+.footerListContent,
+.copyRights {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.footerListContent li {
+    margin: 0;
+    padding: 0.5em;
+    font-weight: 500;
 }
