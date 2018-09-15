@@ -10,57 +10,52 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Karla,Titillium Web,Arial, Helvetica, sans-serif;
 
+    font-family: Karla, Titillium Web, Arial, Helvetica, sans-serif;
     color: var(--main-color);
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+
+a {
+    cursor: pointer;
+}
+
 
 
 
 /* Style the header */
 
-.header {
-    background-color: #f1f1f1;
+#header {
+    position: fixed;
     padding: 30px;
     text-align: center;
     font-size: 15px;
 }
 
-#companyNameLogo {
-    font-size: 1.5em;
+#header-img {
+    width: 45px;
+    height: 45px;
+    float: left;
+    overflow: hidden;
+    margin-right: 0.5em;
+}
+
+#companyName {
+    font-size: 2em;
     font-weight: 550;
     font-family: 'Black Ops One', cursive;
-    /* padding: 0.9em 2em 0.9em 1em; */
 }
 
-
-
-
-/*The Coolest Ninja Toy Learn...*/
-
-.main-title {
-    text-align: center;
-    padding-top: 10em;
-}
-
-.main-title h1{
-    font-family: 'Black Ops One', cursive;
-    font-size: 3em;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-}
 
 
 /* Style the top navigation bar */
 
 .topnav {
-    /*background-color: var(--four-color);*/
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
@@ -69,24 +64,32 @@ body {
     margin: 0;
     top: 0;
     position: fixed;
-    z-index: 1000;
-   
+    z-index: 99999;
+    overflow: hidden;
+    background-color: var(--four-color);
+    border-bottom: 1px solid #dfe3e8
 }
-.sticky{
-     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+
+.sticky {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
+
+
 
 /* Style the topnav links */
 
 .topnav li {
-    /* float: left; */
-    padding: 5px 40px;
+    float: left;
+    padding: 10px 40px;
     list-style-type: none;
     color: var(--primary-color);
 }
 
 .topnav li:first-child {
     margin-right: auto;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 1.5em;
 }
 
 .topnav a {
@@ -94,33 +97,140 @@ body {
 }
 
 
+
+/*The Coolest Ninja Toy Learn...*/
+
+.main-title {
+    text-align: center;
+    padding-top: 12em;
+}
+
+
+.main-title h1 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    padding: 24px;
+}
+
+
+
+
+/*Form*/
+
+form {
+    padding: 4em;
+}
+
+#email {
+    width: 100%;
+    border: 0;
+    max-width: 350px;
+    padding: 12px;
+    box-shadow: border: 1px solid #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#email:hover {
+    background-color: var(--secondary-color);
+    color: var(--four-color);
+}
+
+#submit {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    margin: 25px 0;
+    font-weight: 700;
+    color: var(--four-color);
+    background-color: var(--main-color);
+}
+
+input:hover::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--four-color);
+    opacity: 1;
+    /* Firefox */
+}
+
+input:hover:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--four-color);
+}
+
+input:hover::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--four-color);
+}
+
+
+
+
+/*  What we offer: Premiun Materials, 
+    Fast Shipping and  Quality insurance*/
+
 .main-content {
-    padding-top: 5em;
-    padding-bottom: 10em;
+    padding: 5em 0 10em 0;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
-
-
-
-/* Create three unequal columns that sits next to each other */
-
-.column {
-    padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
+.offerContent {
+    display: flex;
+    padding: 0.5em 0 0.5em 0;
 }
+
+.mainContentListIcons {
+    display: flex;
+    font-size: 3em;
+}
+
+.offerDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4.5em;
+}
+
+.main-content h3 {
+    font-weight: 600;
+    padding-bottom: 0.5em;
+}
+
+.main-content p {
+    padding: 0.2em 0 2em 0;
+}
+
+
+.video-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5em 0 2em 0;
+}
+
+
 
 
 /*Responsive Pricing Table**/
 
+#prices-table {
+    padding: 10em 3.5em 0 3.5em;
+}
+
 .columnsPrice {
     float: left;
     width: 33.3%;
-    padding: 8px;
+    padding: 4px;
 }
+
+
+
 
 /* Style the list */
 
@@ -135,27 +245,42 @@ body {
 
 
 
+
 /* Add shadows on hover */
 
 .price:hover {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
 }
 
+
+
 /* Pricing header */
 
 .price .header {
-    background-color: #111;
-    color: white;
-    font-size: 25px;
+    background-color: var(--secondary-color);
+    color: var(--four-color);
+    font-size: 1.5em;
+}
+
+
+.price .cost {
+    font-weight: 500;
 }
 
 
 /* List items */
 
+.price ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
 .price li {
-    border-bottom: 1px solid #eee;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 
@@ -172,20 +297,27 @@ body {
 /* The "Sign Up" button */
 
 .button {
-    background-color: #4CAF50;
+    background-color: var(--main-color);
     border: none;
     color: white;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
+     /*flex: auto;*/
+     /*flex:none;*/
 }
+
 
 
 /* Style the footer */
 
-footer{
+footer {
+
     padding-top: 40em;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer {
