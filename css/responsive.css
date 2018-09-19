@@ -14,17 +14,20 @@
          margin: 0px 10px 10px 40px;
      }
 
-    /* .topnav li:first-child {
-         padding-left: 4em;
+    /* .topnav {
+         box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.5);
      }*/
-
+     .main-title {
+         text-align: center;
+         padding-top: 15em;
+     }
 
      .main-title h1 {
-         font-size: 1.5em;
+         font-size: 2em;
      }
 
      .main-title h2 {
-         word-break: break-all;
+         /*word-break: break-all;*/
          font-size: 0.9em;
          padding: 1em 2em 0 2em;
      }
@@ -49,7 +52,7 @@
      }
      #prices-table {
 
-         padding: 0 1.5em 0 1.5em;
+         padding: 0 2.5em 0 2.5em;
      }
 
      footer {
@@ -65,7 +68,7 @@
          margin: 0;
      }
      .columnsPrice {
-         padding-top: 2em;
+         padding-top: 5em;
          width: 100%;
      }
  }

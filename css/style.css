@@ -12,13 +12,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /*overflow-x: hidden;*/
 }
 
 body {
 
     font-family: Karla, Titillium Web, Arial, Helvetica, sans-serif;
     color: var(--main-color);
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+   /*background-color: black;*/
+   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 a {
@@ -67,14 +69,14 @@ a {
     z-index: 99999;
     overflow: hidden;
     background-color: var(--four-color);
-    border-bottom: 1px solid #dfe3e8
+    border-bottom: 1px solid #dfe3e8;
+    left: 0;
 }
+
 
 .sticky {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
-
-
 
 /* Style the topnav links */
 
@@ -95,8 +97,6 @@ a {
 .topnav a {
     text-decoration: none;
 }
-
-
 
 /*The Coolest Ninja Toy Learn...*/
 
@@ -212,6 +212,8 @@ input:hover::-ms-input-placeholder {
     justify-content: center;
     flex-direction: column;
     padding: 2.5em 0 2em 0;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -297,15 +299,16 @@ input:hover::-ms-input-placeholder {
 /* The "Sign Up" button */
 
 .button {
-    background-color: var(--main-color);
-    border: none;
-    color: white;
-    padding: 10px 25px;
+    /* background-color: var(--main-color); */
+    border-color: var(--main-color);
+    border: 1px;
+    color: var(--main-color);
+    /* padding: 10px 25px; */
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-     /*flex: auto;*/
-     /*flex:none;*/
+    /* flex: auto; */
+    /* flex:none; */
 }
 
 
