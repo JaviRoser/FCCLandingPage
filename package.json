@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/JaviRoser/FCCLandingPage#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-webserver": "^0.9.1"
-  }
+  },
+  "dependencies": {}
 }
