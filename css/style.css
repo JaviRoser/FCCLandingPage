@@ -12,22 +12,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 body {
-
     font-family: Karla, Titillium Web, Arial, Helvetica, sans-serif;
     color: var(--main-color);
-   /*background-color: black;*/
-   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 a {
     cursor: pointer;
 }
 
-
+/*a:hover{
+    background-color: red;
+}*/
 
 
 /* Style the header */
@@ -51,6 +51,7 @@ a {
     font-size: 2em;
     font-weight: 550;
     font-family: 'Black Ops One', cursive;
+    letter-spacing: -2px;
 }
 
 
@@ -70,7 +71,7 @@ a {
     background-color: var(--four-color);
     border-bottom: 1px solid #dfe3e8;
     left: 0;
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -84,7 +85,9 @@ a {
     float: left;
     padding: 10px 40px;
     list-style-type: none;
-    color: var(--primary-color);
+    color: var(--main-color);
+    font-weight: 700;
+    /*padding: 1em;*/
 }
 
 .topnav li:first-child {
@@ -94,8 +97,20 @@ a {
     padding-left: 1.5em;
 }
 
+.topnav .nav-link {
+    padding: 0.5em;
+}
+
 .topnav a {
     text-decoration: none;
+    color: var(--main-color);
+
+}
+
+.topnav a:hover {
+    color: var(--four-color);
+    background-color: var(--main-color);
+
 }
 
 /*The Coolest Ninja Toy Learn...*/
@@ -110,11 +125,13 @@ a {
     font-family: 'Black Ops One', cursive;
     font-size: 3em;
     font-weight: 500;
-    letter-spacing: 0.2em;
+    letter-spacing: -2px;
     padding: 24px;
 }
 
-
+.main-title h2 {
+    letter-spacing: -1px;
+}
 
 
 /*Form*/
@@ -128,7 +145,7 @@ form {
     border: 0;
     max-width: 350px;
     padding: 12px;
- border: 1px solid #eee;
+    border: 1px solid #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -137,7 +154,7 @@ form {
     color: var(--four-color);
 }
 
-#submit {
+#submit_btn {
     max-width: 150px;
     width: 100%;
     height: 30px;
@@ -146,6 +163,10 @@ form {
     font-weight: 700;
     color: var(--four-color);
     background-color: var(--main-color);
+}
+
+#submit_btn:hover {
+    cursor: pointer;
 }
 
 input:hover::placeholder {
@@ -186,7 +207,8 @@ input:hover::-ms-input-placeholder {
 
 .mainContentListIcons {
     display: flex;
-    font-size: 3em;
+    flex-wrap: wrap;
+    font-size: 3.5em;
 }
 
 .offerDescription {
@@ -211,7 +233,7 @@ input:hover::-ms-input-placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2.5em 0 2em 0;
+    padding: 2em 0 6em 0;
     width: 100%;
     height: auto;
 }
@@ -254,19 +276,17 @@ input:hover::-ms-input-placeholder {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
 }
 
-
-
 /* Pricing header */
-
 .price .header {
     background-color: var(--secondary-color);
     color: var(--four-color);
     font-size: 1.5em;
+    letter-spacing: -2px;
 }
 
-
 .price .cost {
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
 
@@ -285,8 +305,6 @@ input:hover::-ms-input-placeholder {
     flex-flow: column nowrap;
 }
 
-
-
 /* Grey list item */
 
 .price .grey {
@@ -298,7 +316,7 @@ input:hover::-ms-input-placeholder {
 
 /* The "Sign Up" button */
 
-.button {
+.signup_button {
     /* background-color: var(--main-color); */
     border-color: var(--main-color);
     border: 1px;
@@ -316,8 +334,7 @@ input:hover::-ms-input-placeholder {
 /* Style the footer */
 
 footer {
-
-    padding-top: 40em;
+    padding-top: 50em;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -334,10 +351,11 @@ footer {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    font-size: 1em;
 }
 
 .footerListContent li {
     margin: 0;
     padding: 0.5em;
-    font-weight: 500;
+    font-weight: 600;
 }
