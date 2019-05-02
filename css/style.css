@@ -1,9 +1,9 @@
 /*Allow to change the color where the color variable is*/
 
 :root {
-    --main-color: #004a7c;
-    --secondary-color: #005691;
-    --ternary-color: #e8f1f5;
+    --main-color: #2b2e4a;
+    --secondary-color: #903749;
+    --ternary-color: #903749;
     --four-color: #fafafa;
 }
 
@@ -18,7 +18,6 @@
 body {
     font-family: Karla, Titillium Web, Arial, Helvetica, sans-serif;
     color: var(--main-color);
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 a {
@@ -37,6 +36,7 @@ a {
     padding: 30px;
     text-align: center;
     font-size: 15px;
+
 }
 
 #header-img {
@@ -123,7 +123,7 @@ a {
 
 .main-title h1 {
     font-family: 'Black Ops One', cursive;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 500;
     letter-spacing: -2px;
     padding: 24px;
@@ -150,7 +150,7 @@ form {
 }
 
 #email:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     color: var(--four-color);
 }
 
@@ -208,23 +208,26 @@ input:hover::-ms-input-placeholder {
 .mainContentListIcons {
     display: flex;
     flex-wrap: wrap;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 .offerDescription {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 4.5em;
+    padding-left: 5em;
 }
 
 .main-content h3 {
-    font-weight: 600;
-    padding-bottom: 0.5em;
+    font-weight: 900;
+    font-size: 1.5em;
+    overflow-y: hidden;
+    /*padding-bottom: 0.5em;*/
+
 }
 
 .main-content p {
-    padding: 0.2em 0 2em 0;
+    padding: 0.4em 0 4em 0;
 }
 
 
@@ -233,9 +236,10 @@ input:hover::-ms-input-placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2em 0 6em 0;
+    padding: 4em 0 6em 0;
     width: 100%;
     height: auto;
+
 }
 
 
@@ -253,9 +257,6 @@ input:hover::-ms-input-placeholder {
     padding: 4px;
 }
 
-
-
-
 /* Style the list */
 
 .price {
@@ -268,8 +269,6 @@ input:hover::-ms-input-placeholder {
 }
 
 
-
-
 /* Add shadows on hover */
 
 .price:hover {
@@ -278,15 +277,15 @@ input:hover::-ms-input-placeholder {
 
 /* Pricing header */
 .price .header {
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     color: var(--four-color);
     font-size: 1.5em;
     letter-spacing: -2px;
 }
 
 .price .cost {
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 900;
+    font-size: 2em;
 }
 
 
